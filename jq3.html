@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQ-3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style type="text/css">
+        #text{
+            width: 250px;
+            height: 45px;
+            background-color: red;
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+        }
+        #dv1{
+            width: 250px;
+            height: 450px;
+            background-color: red;
+            display: none;
+        }
+        #close{
+            margin: 0;
+            padding: 10px 20px 10px 25px;
+            color: #fff;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#text").click(function(){
+                $("#dv1").slideDown(1500)
+            });
+            $("#close").click(function(){
+                $("#dv1").slideUp(1500)
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="text">
+        Click Here
+    </div>
+    <div id="dv1">
+        <label id="close">Close</label>
+    </div>
+</body>
+</html>
